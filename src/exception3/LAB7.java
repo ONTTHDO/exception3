@@ -1,6 +1,6 @@
 package exception3;
 
-public class LAB5 {
+public class LAB7 {
 
     public static void main(String[] args) {
         System.out.println("Main method call method doThis()");
@@ -17,7 +17,8 @@ public class LAB5 {
     }
 
     public static void doThat() throws Exception {
-        System.out.println(1/0);
+        throw new MyException("Hello MyException");
+        
     }
 
 }
